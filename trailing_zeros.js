@@ -17,7 +17,7 @@ readline.question('input: ', res => {
     let c=0;
     let cString='';
     for(let i=0; i<f.length; ++i) {
-        if(cString == f[i]) {
+        if(cString == f[i] && parseInt(cString) == 0) {
             ++c;
         } else {
             cString=f[i];
